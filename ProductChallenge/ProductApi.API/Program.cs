@@ -36,7 +36,7 @@ builder.Services.AddAutoMapper(typeof(ProductProfile));
 builder.Services.Configure<DiscountApiOptions>(
     builder.Configuration.GetSection("DiscountApi"));
 builder.Services.AddHttpClient<IDiscountService, DiscountService>();
-builder.Services.AddScoped<IStatusCache, StatusCache>();
+builder.Services.AddSingleton<IStatusCache, StatusCache>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {

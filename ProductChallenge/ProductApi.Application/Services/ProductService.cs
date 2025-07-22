@@ -22,9 +22,6 @@ namespace ProductApi.Application.Services
 
         public async Task<ProductResponse> CreateAsync(ProductRequest request)
         {
-            if (request == null)
-                throw new ArgumentNullException(nameof(request), "Product request cannot be null.");
-
             var product = _mapper.Map<Product>(request);
             await _repo.AddAsync(product);
             var response = _mapper.Map<ProductResponse>(product);
