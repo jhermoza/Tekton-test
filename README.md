@@ -5,6 +5,14 @@ Repositorio de código para REST API de gestión de productos, prueba técnica .
 ## Repositorio
 https://github.com/jhermoza/Tekton-test#
 
+## 📋 Ejemplos de Uso
+
+**¿Quieres ver ejemplos prácticos de cómo usar esta API?**
+
+- 📖 **[Guía de ejemplos completa](USAGE_EXAMPLES.md)** - Ejemplos con cURL, Postman y más
+- 💻 **[Cliente de ejemplo en C#](ProductApiClient/ProductApiExample/)** - Aplicación de consola completa
+- 🔗 **[Colección de Postman](ProductApi-Postman-Collection.json)** - Importa y prueba directamente
+
 ## Pasos para ejecutar el proyecto
 1. Tener instalado .NET 8
 2. Verificar que el proyecto de inicio sea **ProductApi.API**
